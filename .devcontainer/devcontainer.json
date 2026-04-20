@@ -5,6 +5,7 @@
     "ghcr.io/devcontainers/features/git:1": {}
   },
   "forwardPorts": [5173],
+
   "customizations": {
     "vscode": {
       "settings": {
@@ -17,6 +18,6 @@
       ]
     }
   },
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "git config --global user.name 'Lekhit Borole' && git config --global user.email 'blekhit@gmail.com' && npm install",
   "remoteUser": "node"
 }
